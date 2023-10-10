@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material/styles";
 import { darken, lighten } from "polished";
 
 export const DrawerWidth = 250;
-
+//2 27 56
 export const Colors = {
   primary: "#5f2c3e",
   secondary: "#d1adcc",
@@ -43,7 +43,7 @@ const theme = createTheme({
   components: {
     MuiButton: {
       defaultProps: {
-        disableRipple: true,
+        disableRipple: true, // 關閉典點擊特效
         disableElevation: true,
       },
     },
@@ -63,21 +63,22 @@ const theme = createTheme({
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          width: DrawerWidth,          
+          width: DrawerWidth,
           background: Colors.primary,
           color: Colors.secondary,
-          borderRadius: '0px 100px 0px 0px',
-          borderRight: `1px solid ${Colors.primary}`
-        }
-      }
+          borderRadius: "0px 100px 0px 0px",
+          borderRight: `1px solid ${Colors.primary}`,
+        },
+      },
     },
     MuiDivider: {
       styleOverrides: {
         root: {
-          borderColor: lighten(0.2, Colors.primary)
-        }
-      }
+          borderColor: lighten(0.2, Colors.primary),
+        },
+      },
     },
+    // custom component
     MyShopButton: {
       styleOverrides: {
         root: {
