@@ -43,7 +43,7 @@ const theme = createTheme({
   components: {
     MuiButton: {
       defaultProps: {
-        disableRipple: true, // 關閉典點擊特效
+        disableRipple: true, // 關閉點擊特效
         disableElevation: true,
       },
     },
@@ -64,10 +64,10 @@ const theme = createTheme({
       styleOverrides: {
         paper: {
           width: DrawerWidth,
-          background: Colors.primary,
+          backgroundColor: Colors.primary,
           color: Colors.secondary,
           borderRadius: "0px 100px 0px 0px",
-          borderRight: `1px solid ${Colors.primary}`,
+          borderRight: `1px solid ${Colors.secondary}`,
         },
       },
     },

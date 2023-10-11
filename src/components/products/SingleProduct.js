@@ -18,7 +18,7 @@ import ProductDetail from "../productdetail";
 import ProductMeta from "./ProductMeta";
 
 export default function SingleProduct({ product, matches }) {
-  const [ProductDetailDialog, showProductDetailDialog, closeProductDialog] =
+  const [ProductDetailDialog, showProductDetailDialog] =
     useDialogModal(ProductDetail);
 
   const [showOptions, setShowOptions] = useState(false);

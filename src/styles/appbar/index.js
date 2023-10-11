@@ -47,8 +47,6 @@ export const MyList = styled(List)(({ theme, type }) => ({
   alignItems: "center",
 }));
 
-
-
 export const DrawerCloseButton = styled(IconButton)(() => ({
   position: 'absolute',
   top: 10,

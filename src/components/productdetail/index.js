@@ -65,6 +65,7 @@ export default function ProductDetail({ open, onClose, product }) {
           </IconButton>
         </Box>
       </DialogTitle>
+      
       <DialogContent>
         <ProductDetailWrapper display={"flex"} flexDirection={matches ? "column" : "row"}>
           <Product sx={{ mr: 4 }}>
@@ -98,12 +99,7 @@ export default function ProductDetail({ open, onClose, product }) {
               <FavoriteIcon sx={{ mr: 2 }} />
               Add to wishlist
             </Box>
-            <Box
-              sx={{
-                mt: 4,
-                color: Colors.dove_gray,
-              }}
-            >
+            <Box sx={{ mt: 4, color: Colors.dove_gray}}>
               <FacebookIcon />
               <TwitterIcon sx={{ pl: 2 }} />
               <InstagramIcon sx={{ pl: 2 }} />
